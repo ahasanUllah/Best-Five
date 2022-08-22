@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
 .fa-circle{
     font-size: 10px;
     color: darkgray;
@@ -26,11 +32,9 @@
 .hero-text h1 {
     font-size: 60px;
 }
-.underline {
-        
-        border-bottom: 3px solid rgb(27, 27, 163);
-        border-radius: 10px;
-        border-image: repeat;
-        line-height: 0px;
-      
+h1 {
+    font-weight: 700;
+}
+h5 {
+    font-weight: 500;
 }
