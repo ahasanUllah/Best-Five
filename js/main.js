@@ -34,8 +34,8 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     }
     const totalPlayerExp = currentPerPlayer * liLength
     
-    const playerExpense = document.getElementById('player-expense');
-    playerExpense.innerText = totalPlayerExp
+    const playerExpenseText = document.getElementById('player-expense');
+    playerExpenseText.innerText = totalPlayerExp
 
 })
 document.getElementById('calculate-total-btn').addEventListener('click', function(){
