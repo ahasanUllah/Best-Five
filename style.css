@@ -2,3 +2,6 @@
     font-size: 10px;
     color: darkgray;
 }
+.margin {
+    margin: 20px, 0;
+}

@@ -10,7 +10,7 @@
   </head>
   <body>
     <main class="container my-5">
-        <div id="players" class="row row-cols-1 row-cols-md-4 g-4">
+        <div id="players" class="row row-cols-1 row-cols-sm-1 row-cols-md-4 g-4">
             <div class="col">
               <div class="card">
                 <img src="images/GHP_MESSI-BOOTS_16-9.jpg" class="card-img-top" alt="...">
@@ -41,17 +41,13 @@
                 </div>
               </div>
             </div>
-            
+            <!-- Select Five Card -->
             <div class="col">
-              <div class="card">
+              <div class="card h-100">
                 <div class="card-body p-4">
                   <h5 class="card-title fs-3 text-center pb-4">Selected - V</h5>
                   <ol id="player-list" class="fs-5">
-                    <!-- <li>player 1</li>
-                    <li>player 2</li>
-                    <li>player 3</li>
-                    <li>player 4</li>
-                    <li>player 5</li> -->
+                    
                   </ol>
                 </div>
               </div>
@@ -87,27 +83,30 @@
                 </div>
               </div>
             <div class="col">
+              <!-- Budget Card -->
                 <div class="card">
                   
                   <div class="card-body text-center p-3">
                     <h5 class="card-title fs-3 pb-4">Budget</h5>
-                    <label for="per-player">Per Player</label>
-                    <input type="text" id="per-player">
-                    <button class="btn btn-primary w-100 my-4">Calculate</button>
-                    <p class="fs-6">Player Expenses $5000</p>
-                    <div class="d-flex justify-content-between py-3">
-                        <label for="manager">manager</label>
-                    <input type="text" name="" id="manager">
+                    <div class="d-flex justify-content-around flex-sm-column flex-md-row align-items-center">
+                      <label for="per-player">Per Player</label>
+                    <input type="text" id="per-player" class="w-50" >
+                    </div>
+                    <button id="calculate-btn" class="btn btn-primary w-100 my-4">Calculate</button>
+                    <p class="fs-6">Player Expenses $<span id="player-expense">0</span></p>
+                    <div class="d-flex justify-content-around py-3">
+                        <label for="manager" >manager:</label>
+                    <input type="text" name="" id="manager" class="w-50" >
                     </div>
                     
-                    <div class="d-flex justify-content-between">
-                        <label for="coach" class=" ">Coach :</label>
-                    <input type="text" name="" id="coach" class="" >
+                    <div class="d-flex justify-content-around">
+                        <label for="coach" class=" ">Coach:</label>
+                    <input type="text" name="" id="coach" class="w-50" >
                     </div>
-                    <button class="btn btn-primary w-100 my-4">Calculate Total</button>
+                    <button id="calculate-total-btn" class="btn btn-primary w-100 my-4">Calculate Total</button>
                     <div class="d-flex justify-content-between">
                         <p>Total</p>
-                    <p class="text-primary fw-bold">$1000</p>
+                    <p class="text-primary fw-bold">$<span id="total"></span></p>
                     </div>
                   </div>
                 </div>
