@@ -10,14 +10,14 @@
   </head>
   <body>
     <main class="container my-5">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div id="players" class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
               <div class="card">
                 <img src="images/GHP_MESSI-BOOTS_16-9.jpg" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                   <h5 class="card-title fs-3">Lionel Messi</h5>
                   <p class="py-3">38 Goals <i class="fa-solid fa-circle"></i> 120 Assist</p>
-                  <button class="btn btn-primary w-75">Select</button>
+                  <button class="btn btn-primary w-75" onclick="selected(this)" >Select</button>
                 </div>
               </div>
             </div>
@@ -27,7 +27,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title fs-3">Karim Benzema</h5>
                   <p class="py-3">38 Goals <i class="fa-solid fa-circle"></i> 120 Assist</p>
-                  <button class="btn btn-primary w-75">Select</button>
+                  <button class="btn btn-primary w-75" onclick="selected(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -37,7 +37,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title fs-3">Cristiano Ronaldo</h5>
                   <p class="py-3">38 Goals <i class="fa-solid fa-circle"></i> 120 Assist</p>
-                  <button class="btn btn-primary w-75">Select</button>
+                  <button class="btn btn-primary w-75" onclick="selected(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -46,12 +46,12 @@
               <div class="card">
                 <div class="card-body p-4">
                   <h5 class="card-title fs-3 text-center pb-4">Selected - V</h5>
-                  <ol class="fs-5">
-                    <li>player 1</li>
+                  <ol id="player-list" class="fs-5">
+                    <!-- <li>player 1</li>
                     <li>player 2</li>
                     <li>player 3</li>
                     <li>player 4</li>
-                    <li>player 5</li>
+                    <li>player 5</li> -->
                   </ol>
                 </div>
               </div>
@@ -62,7 +62,7 @@
                   <div class="card-body text-center">
                     <h5 class="card-title fs-3">Neymar Jr</h5>
                     <p class="py-3">38 Goals <i class="fa-solid fa-circle"></i> 120 Assist</p>
-                    <button class="btn btn-primary w-75">Select</button>
+                    <button class="btn btn-primary w-75" onclick="selected(this)">Select</button>
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@
                   <div class="card-body text-center">
                     <h5 class="card-title fs-3">Ter Stagen</h5>
                     <p class="py-3">38 Goals <i class="fa-solid fa-circle"></i> 120 Assist</p>
-                    <button class="btn btn-primary w-75">Select</button>
+                    <button class="btn btn-primary w-75" onclick="selected(this)">Select</button>
                   </div>
                 </div>
               </div>
@@ -82,7 +82,7 @@
                   <div class="card-body text-center">
                     <h5 class="card-title fs-3">Killian Mbape</h5>
                     <p class="py-3">38 Goals <i class="fa-solid fa-circle"></i> 120 Assist</p>
-                    <button class="btn btn-primary w-75">Select</button>
+                    <button class="btn btn-primary w-75" onclick="selected(this)">Select</button>
                   </div>
                 </div>
               </div>
