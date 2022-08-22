@@ -5,3 +5,32 @@
 .margin {
     margin: 20px, 0;
 }
+.carousel-inner{
+    height: 480px;
+}
+.hero-image {
+    background: url(images/HeaderBaner.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    color: white;
+    text-align: center;
+    width: 780px;
+}
+.hero-text h1 {
+    font-size: 60px;
+}
+.underline {
+        
+        border-bottom: 3px solid rgb(27, 27, 163);
+        border-radius: 10px;
+        border-image: repeat;
+        line-height: 0px;
+      
+}
